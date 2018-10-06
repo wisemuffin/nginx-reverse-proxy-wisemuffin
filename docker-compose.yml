@@ -4,10 +4,10 @@ services:
   flask:
     image: webapp-flask
     build:
-      context: ../website/docker-flask-uwsgi-nginx
+      context: ../website/wisemuffin
       dockerfile: Dockerfile-flask
     volumes:
-      - "../website/docker-flask-uwsgi-nginx:/app"
+      - "../website/wisemuffin:/app"
   nginx:
     image: 'nginx:latest'
     ports:
